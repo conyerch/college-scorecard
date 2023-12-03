@@ -13,6 +13,10 @@
 		B97827DC2B1BF36E00975637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97827DA2B1BF36E00975637 /* Main.storyboard */; };
 		B97827DE2B1BF37000975637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97827DD2B1BF37000975637 /* Assets.xcassets */; };
 		B97827E12B1BF37000975637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97827DF2B1BF37000975637 /* LaunchScreen.storyboard */; };
+		B97827E92B1C04EC00975637 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827E82B1C04EC00975637 /* Constants.swift */; };
+		B97827EB2B1C0ADF00975637 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827EA2B1C0ADF00975637 /* Model.swift */; };
+		B97827ED2B1C0F2C00975637 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827EC2B1C0F2C00975637 /* Response.swift */; };
+		B97827EF2B1C129900975637 /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827EE2B1C129900975637 /* Schools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B97827DD2B1BF37000975637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B97827E02B1BF37000975637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B97827E22B1BF37000975637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97827E82B1C04EC00975637 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B97827EA2B1C0ADF00975637 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B97827EC2B1C0F2C00975637 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		B97827EE2B1C129900975637 /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				B97827DD2B1BF37000975637 /* Assets.xcassets */,
 				B97827DF2B1BF37000975637 /* LaunchScreen.storyboard */,
 				B97827E22B1BF37000975637 /* Info.plist */,
+				B97827E82B1C04EC00975637 /* Constants.swift */,
+				B97827EA2B1C0ADF00975637 /* Model.swift */,
+				B97827EC2B1C0F2C00975637 /* Response.swift */,
+				B97827EE2B1C129900975637 /* Schools.swift */,
 			);
 			path = "college-scorecard";
 			sourceTree = "<group>";
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B97827EB2B1C0ADF00975637 /* Model.swift in Sources */,
 				B97827D92B1BF36E00975637 /* ViewController.swift in Sources */,
+				B97827EF2B1C129900975637 /* Schools.swift in Sources */,
 				B97827D52B1BF36E00975637 /* AppDelegate.swift in Sources */,
 				B97827D72B1BF36E00975637 /* SceneDelegate.swift in Sources */,
+				B97827ED2B1C0F2C00975637 /* Response.swift in Sources */,
+				B97827E92B1C04EC00975637 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
