@@ -40,18 +40,18 @@ class CollegeTableViewCell: UITableViewCell {
         
         // set thumbnail
         
-        guard self.school!.web != "" else {
-            return
-        }
+        //guard self.school!.web != "" else {
+        //    return
+        //}
         
-        let url = URL(string: self.school!.web)
+        let url = URL(string: Constants.genImage2)
         
         let session = URLSession.shared
         
         let dataTask = session.dataTask(with: url!) { data, response, error in
             if error == nil && data != nil {
                 
-                if url?.absoluteString != self.school?.web {
+                if url?.absoluteString != Constants.genImage2 {
                     
                     // video cell has been recycled
                     return

@@ -21,26 +21,29 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CollegeCell" id="klf-Dy-Vbb" customClass="CollegeTableViewCell" customModule="college_scorecard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="234.66667175292969"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="336.33334350585938"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="klf-Dy-Vbb" id="BV5-q9-FFV">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="234.66667175292969"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="336.33334350585938"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qXe-ZK-4QL">
-                                                    <rect key="frame" x="20" y="20" width="353" height="194.66666666666666"/>
+                                                    <rect key="frame" x="20" y="20" width="353" height="296.33333333333331"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fFT-MK-lnt">
-                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="133.66666666666666"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFT-MK-lnt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="235.33333333333334"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="fFT-MK-lnt" secondAttribute="height" multiplier="360:240" id="btL-IU-C0r"/>
+                                                            </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2k-aV-2CJ" userLabel="School Name">
-                                                            <rect key="frame" x="0.0" y="143.66666666666666" width="353" height="20.666666666666657"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2k-aV-2CJ" userLabel="School Name">
+                                                            <rect key="frame" x="0.0" y="245.33333333333331" width="353" height="20.666666666666686"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCf-Dk-WUB" userLabel="Student Size">
-                                                            <rect key="frame" x="0.0" y="174.33333333333334" width="353" height="20.333333333333343"/>
+                                                            <rect key="frame" x="0.0" y="276" width="353" height="20.333333333333314"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -59,6 +62,7 @@
                                             <outlet property="collegeName" destination="R2k-aV-2CJ" id="uBX-Pa-fXt"/>
                                             <outlet property="imageView" destination="fFT-MK-lnt" id="ShK-XC-w72"/>
                                             <outlet property="studentSize" destination="aCf-Dk-WUB" id="tWB-Qf-uJn"/>
+                                            <outlet property="urlImageView" destination="fFT-MK-lnt" id="DWV-GC-9NA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

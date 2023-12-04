@@ -42,6 +42,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.setCell(school)
         // return
         
+        //cell.setNeedsLayout() //invalidate current layout
+        //cell.layoutIfNeeded() //update immediately
+        
         return cell
     }
     

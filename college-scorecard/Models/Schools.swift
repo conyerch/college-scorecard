@@ -33,30 +33,17 @@ struct Schools: Decodable {
     }
     
     init (from decoder: Decoder) throws {
-        
-        //print("here1")
+       
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        //let test = container.allKeys
-        
-        print("here2")
-        
         self.id = try container.decode(Int.self, forKey: .id)
-        
-        print("here3")
         
         self.schoolName = try container.decode(String.self, forKey: .schoolName)
         
-        print("here4")
-        
         self.studentSize = try container.decode(Int.self, forKey: .studentSize)
         
-        print("here5")
-        
         self.web = try container.decode(String.self, forKey: .web)
-        
-        print("here6")
         
         self.facSalary = try container.decode(Int.self, forKey: .facSalary)
         
@@ -78,10 +65,7 @@ struct Schools: Decodable {
         catch {
             self.cost = -1
             
-        }
-        
-        print("here7")
-           
+            }
            
        }
 }
