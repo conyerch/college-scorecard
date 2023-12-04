@@ -33,11 +33,16 @@ class Model {
             }
             
             do {
+                
                 let decoder = JSONDecoder()
                 
                 let response = try decoder.decode(Response.self, from: data!)
                 
+                //dump(response)
+                
                 if response.results != nil {
+                    
+                    //print("not nil")
                     
                     DispatchQueue.main.async {
                         self.delegate?.getSchools(response.results!)

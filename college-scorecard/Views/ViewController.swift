@@ -33,13 +33,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CollegeCell_ID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CollegeCell_ID, for: indexPath) as! CollegeTableViewCell
         
         // Config cell with data
         
-        let name = self.colleges[indexPath.row].schoolName
+        let school = self.colleges[indexPath.row]
         
-        cell.textLabel?.text = name
+        cell.setCell(school)
         // return
         
         return cell
