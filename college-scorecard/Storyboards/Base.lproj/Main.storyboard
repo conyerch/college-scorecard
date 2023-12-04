@@ -20,12 +20,40 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CollegeCell" id="klf-Dy-Vbb">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CollegeCell" id="klf-Dy-Vbb" customClass="CollegeTableViewCell" customModule="college_scorecard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="170.33332824707031"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="klf-Dy-Vbb" id="BV5-q9-FFV">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="170.33332824707031"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qXe-ZK-4QL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="170.33333333333334"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fFT-MK-lnt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="393" height="129.66666666666666"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2k-aV-2CJ" userLabel="School Name">
+                                                            <rect key="frame" x="0.0" y="129.66666666666666" width="393" height="20.333333333333343"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCf-Dk-WUB" userLabel="Student Size">
+                                                            <rect key="frame" x="0.0" y="150" width="393" height="20.333333333333343"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qXe-ZK-4QL" firstAttribute="top" secondItem="BV5-q9-FFV" secondAttribute="top" id="XVV-PV-9C3"/>
+                                                <constraint firstItem="qXe-ZK-4QL" firstAttribute="leading" secondItem="BV5-q9-FFV" secondAttribute="leading" id="afR-Bc-3aq"/>
+                                                <constraint firstAttribute="bottom" secondItem="qXe-ZK-4QL" secondAttribute="bottom" id="j9w-wt-dGh"/>
+                                                <constraint firstAttribute="trailing" secondItem="qXe-ZK-4QL" secondAttribute="trailing" id="olX-Uc-6LI"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
