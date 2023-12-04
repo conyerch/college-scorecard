@@ -9,12 +9,12 @@ import Foundation
 
 struct Schools: Decodable {
     
-    var id = ""
+    var id:Int?
     var schoolName = ""
-    var studentSize = ""
-    var sat = ""
-    var facSalary = ""
-    var cost = ""
+    var studentSize:Int?
+    var sat:Int?
+    var facSalary:Int?
+    var cost:Int?
     var web = ""
     
     // latest.admissions.sat_scores.average.overall,school.faculty_salary,latest.cost.attendance.academic_year"
@@ -34,13 +34,15 @@ struct Schools: Decodable {
     
     init (from decoder: Decoder) throws {
         
-        print("here1")
+        //print("here1")
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
+        //let test = container.allKeys
+        
         print("here2")
         
-        self.id = try container.decode(String.self, forKey: .id)
+        self.id = try container.decode(Int.self, forKey: .id)
         
         print("here3")
         
@@ -48,7 +50,7 @@ struct Schools: Decodable {
         
         print("here4")
         
-        self.studentSize = try container.decode(String.self, forKey: .studentSize)
+        self.studentSize = try container.decode(Int.self, forKey: .studentSize)
         
         print("here5")
         
@@ -56,11 +58,27 @@ struct Schools: Decodable {
         
         print("here6")
         
-        self.sat = try container.decode(String.self, forKey: .sat)
+        self.facSalary = try container.decode(Int.self, forKey: .facSalary)
         
-        self.facSalary = try container.decode(String.self, forKey: .facSalary)
+        do {
+            
+            self.sat = try container.decode(Int.self, forKey: .sat)
+            
+        }
+        catch {
+            self.sat = -1
+            
+        }
         
-        self.cost = try container.decode(String.self, forKey: .cost)
+        do {
+            
+            self.cost = try container.decode(Int.self, forKey: .cost)
+            
+        }
+        catch {
+            self.cost = -1
+            
+        }
         
         print("here7")
            

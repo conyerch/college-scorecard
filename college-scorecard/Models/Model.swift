@@ -54,7 +54,7 @@ class Model {
             
             catch {
                 
-                print("error received in network call")
+                print(error)
             }
             // parse the data
 

@@ -27,7 +27,7 @@ struct Response : Decodable {
             
         self.results = try container.decode([Schools].self, forKey: .results)
         
-        //dump(results)
+        dump(results)
         
     }
     

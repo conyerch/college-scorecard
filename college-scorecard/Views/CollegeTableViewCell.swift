@@ -35,7 +35,8 @@ class CollegeTableViewCell: UITableViewCell {
     func setCell(_ s:Schools) {
         self.school = s
         self.collegeName.text = school?.schoolName
-        self.studentSize.text = school?.studentSize
+        let mys = String(describing: school?.studentSize)
+        self.studentSize.text = mys
         
         // set thumbnail
         
