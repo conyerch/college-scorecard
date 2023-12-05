@@ -24,6 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view.
         model.delegate = self
         model.getSchools()
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,12 +56,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
        // self.tableView.reloadRows(at: [indexPath], with: .none)
         
-        DispatchQueue.main.async {
+        //DispatchQueue.main.async {
                     
-                    cell.setNeedsLayout()
-                }
+          //          cell.setNeedsLayout()
+              //      cell.textLabel?.backgroundColor = .clear
+            //    }
         
-        cell.textLabel?.backgroundColor = .clear
+        
     
         return cell
     }
@@ -74,7 +76,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableView.reloadData()
     }
-
 
 }
 

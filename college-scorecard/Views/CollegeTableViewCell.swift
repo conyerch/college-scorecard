@@ -65,8 +65,12 @@ class CollegeTableViewCell: UITableViewCell {
                 
                 let image = UIImage(data: data!)
                 
-                DispatchQueue.main.async {
-                    self.urlImageView.image = image
+                if self.urlImageView != nil {
+                    
+                    DispatchQueue.main.async {
+                        self.urlImageView.image = image
+                        
+                    }
                     
                 }
             }

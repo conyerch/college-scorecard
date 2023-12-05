@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9230E562B1F94E50003FA96 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9230E552B1F94E50003FA96 /* DetailViewController.swift */; };
 		B92BAC832B1D7033003E9E8A /* CollegeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92BAC822B1D7033003E9E8A /* CollegeTableViewCell.swift */; };
 		B93C16E62B1EDC600064F9EB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B93C16E52B1EDC600064F9EB /* SDWebImage */; };
 		B93C16E82B1EDC600064F9EB /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B93C16E72B1EDC600064F9EB /* SDWebImageMapKit */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9230E552B1F94E50003FA96 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B92BAC822B1D7033003E9E8A /* CollegeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeTableViewCell.swift; sourceTree = "<group>"; };
 		B97827D12B1BF36E00975637 /* college-scorecard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "college-scorecard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97827D42B1BF36E00975637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				B97827DD2B1BF37000975637 /* Assets.xcassets */,
 				B97827D82B1BF36E00975637 /* ViewController.swift */,
 				B92BAC822B1D7033003E9E8A /* CollegeTableViewCell.swift */,
+				B9230E552B1F94E50003FA96 /* DetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9230E562B1F94E50003FA96 /* DetailViewController.swift in Sources */,
 				B97827EB2B1C0ADF00975637 /* Model.swift in Sources */,
 				B97827D92B1BF36E00975637 /* ViewController.swift in Sources */,
 				B97827EF2B1C129900975637 /* Schools.swift in Sources */,
