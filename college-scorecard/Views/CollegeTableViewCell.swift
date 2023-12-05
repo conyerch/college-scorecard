@@ -33,22 +33,28 @@ class CollegeTableViewCell: UITableViewCell {
     }
     
     func setCell(_ s:Schools) {
+        
         self.school = s
+        
+        guard self.school != nil else {
+            
+            return
+        }
+        
         self.collegeName.text = school?.schoolName
+        
         let mys = String(describing: school?.studentSize)
+        
         self.studentSize.text = mys
-        
-        // set thumbnail
-        
-        //guard self.school!.web != "" else {
-        //    return
-        //}
         
         let url = URL(string: Constants.genImage2)
         
         let session = URLSession.shared
         
-        let dataTask = session.dataTask(with: url!) { data, response, error in
+        // set generic image
+        
+        let dataTask = session.dataTask(with: url!) { (data, response, error) in
+            
             if error == nil && data != nil {
                 
                 if url?.absoluteString != Constants.genImage2 {
@@ -61,6 +67,7 @@ class CollegeTableViewCell: UITableViewCell {
                 
                 DispatchQueue.main.async {
                     self.urlImageView.image = image
+                    
                 }
             }
         }

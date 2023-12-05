@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B92BAC832B1D7033003E9E8A /* CollegeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92BAC822B1D7033003E9E8A /* CollegeTableViewCell.swift */; };
+		B93C16E62B1EDC600064F9EB /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B93C16E52B1EDC600064F9EB /* SDWebImage */; };
+		B93C16E82B1EDC600064F9EB /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B93C16E72B1EDC600064F9EB /* SDWebImageMapKit */; };
 		B97827D52B1BF36E00975637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827D42B1BF36E00975637 /* AppDelegate.swift */; };
 		B97827D72B1BF36E00975637 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827D62B1BF36E00975637 /* SceneDelegate.swift */; };
 		B97827D92B1BF36E00975637 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827D82B1BF36E00975637 /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93C16E82B1EDC600064F9EB /* SDWebImageMapKit in Frameworks */,
+				B93C16E62B1EDC600064F9EB /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +134,10 @@
 			dependencies = (
 			);
 			name = "college-scorecard";
+			packageProductDependencies = (
+				B93C16E52B1EDC600064F9EB /* SDWebImage */,
+				B93C16E72B1EDC600064F9EB /* SDWebImageMapKit */,
+			);
 			productName = "college-scorecard";
 			productReference = B97827D12B1BF36E00975637 /* college-scorecard.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +166,9 @@
 				Base,
 			);
 			mainGroup = B97827C82B1BF36E00975637;
+			packageReferences = (
+				B93C16E42B1EDC600064F9EB /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = B97827D22B1BF36E00975637 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -415,6 +426,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B93C16E42B1EDC600064F9EB /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B93C16E52B1EDC600064F9EB /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B93C16E42B1EDC600064F9EB /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		B93C16E72B1EDC600064F9EB /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B93C16E42B1EDC600064F9EB /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B97827C92B1BF36E00975637 /* Project object */;
 }

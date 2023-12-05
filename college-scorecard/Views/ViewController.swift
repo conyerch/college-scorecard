@@ -33,18 +33,35 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CollegeCell_ID, for: indexPath) as! CollegeTableViewCell
         
-        // Config cell with data
+        
+        // Configure cell with data
         
         let school = self.colleges[indexPath.row]
         
         cell.setCell(school)
-        // return
         
-        //cell.setNeedsLayout() //invalidate current layout
-        //cell.layoutIfNeeded() //update immediately
+        //cell.setNeedsDisplay()
         
+        //cell.urlImageView.sd_setImage(with: Constants.genImage2, placeholderImage: #imageLiteral(resourceName: "malee"), options: .continueInBackground, completed: nil)
+
+        
+        //DispatchQueue.main.async
+             //       {
+             //       cell.urlImageView.sd_setImage(with: //self.myURLss[indexPath.row], completed: nil)
+              //  }
+        
+       // self.tableView.reloadRows(at: [indexPath], with: .none)
+        
+        DispatchQueue.main.async {
+                    
+                    cell.setNeedsLayout()
+                }
+        
+        cell.textLabel?.backgroundColor = .clear
+    
         return cell
     }
     
