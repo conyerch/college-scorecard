@@ -23,7 +23,6 @@ class DetailViewController: UIViewController {
     
     var school: Schools?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,9 +36,31 @@ class DetailViewController: UIViewController {
         
         // clear the fields
         
-        titleLabel.text = ""
-        satLabel.text = ""
-        textView.text = ""
+        titleLabel.text = school!.schoolName
+        satLabel.text = String(describing: school!.sat)
+        textView.text = String(describing: school!.facSalary)
+        
+        guard school?.web != nil else {
+            
+            return
+        }
+        
+        // copy school website url to local variable
+        var schoolString = school!.web
+        
+        // logic for testing whether website needs to have https appended
+        let index = schoolString.index(schoolString.startIndex, offsetBy: 4)
+        
+        let mySubstring = schoolString[..<index]
+
+        if mySubstring != "http" {
+            
+            schoolString = "https://" + schoolString
+        }
+        
+        let myURL = URL(string:schoolString)
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
         
         // create the URL
         

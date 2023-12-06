@@ -27,6 +27,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // make sure a row is selected
+        guard tableView.indexPathForSelectedRow != nil else {
+            return
+        }
+        
+        // connect to school that was selected by user
+        
+        let selectedSchool = colleges[tableView.indexPathForSelectedRow!.row]
+        
+        // connect to detail view controller
+        
+        let detailVC = segue.destination as! DetailViewController
+        
+        // set school property of DetailViewController reference
+        detailVC.school = selectedSchool
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colleges.count
     }

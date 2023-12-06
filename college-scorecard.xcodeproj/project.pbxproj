@@ -21,6 +21,7 @@
 		B97827EB2B1C0ADF00975637 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827EA2B1C0ADF00975637 /* Model.swift */; };
 		B97827ED2B1C0F2C00975637 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827EC2B1C0F2C00975637 /* Response.swift */; };
 		B97827EF2B1C129900975637 /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97827EE2B1C129900975637 /* Schools.swift */; };
+		B9D222642B202B6A002107A3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D222632B202B6A002107A3 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B97827EA2B1C0ADF00975637 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B97827EC2B1C0F2C00975637 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		B97827EE2B1C129900975637 /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
+		B9D222632B202B6A002107A3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			files = (
 				B93C16E82B1EDC600064F9EB /* SDWebImageMapKit in Frameworks */,
 				B93C16E62B1EDC600064F9EB /* SDWebImage in Frameworks */,
+				B9D222642B202B6A002107A3 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 			children = (
 				B97827D32B1BF36E00975637 /* college-scorecard */,
 				B97827D22B1BF36E00975637 /* Products */,
+				B9D222622B202B6A002107A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +123,14 @@
 				B9230E552B1F94E50003FA96 /* DetailViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B9D222622B202B6A002107A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9D222632B202B6A002107A3 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
