@@ -16,6 +16,7 @@ struct Schools: Decodable {
     var facSalary:Int?
     var cost:Int?
     var web = ""
+    var earnings:[Earnings]?
     
     // latest.admissions.sat_scores.average.overall,school.faculty_salary,latest.cost.attendance.academic_year"
     
@@ -29,14 +30,16 @@ struct Schools: Decodable {
         case facSalary = "school.faculty_salary"
         case cost = "latest.cost.attendance.academic_year"
         case web = "school.school_url"
+        case earnings = "latest.programs.cip_4_digit"
         
     }
     
     init (from decoder: Decoder) throws {
        
-        
+        // retrieve main container
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
+        // set member fields
         self.id = try container.decode(Int.self, forKey: .id)
         
         self.schoolName = try container.decode(String.self, forKey: .schoolName)
@@ -47,6 +50,7 @@ struct Schools: Decodable {
         
         self.facSalary = try container.decode(Int.self, forKey: .facSalary)
         
+        // try to get SAT/cost fields, throw error if unretrievable 
         do {
             
             self.sat = try container.decode(Int.self, forKey: .sat)
@@ -66,6 +70,9 @@ struct Schools: Decodable {
             self.cost = -1
             
             }
+        
+        // get earnings from Earnings object
+        self.earnings = try container.decode([Earnings]?.self, forKey: .earnings)
            
        }
 }

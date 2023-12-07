@@ -34,12 +34,15 @@ class DetailViewController: UIViewController {
             return
         }
         
-        // clear the fields
+        // set the fields
         
         titleLabel.text = school!.schoolName
+        
         satLabel.text = String(describing: school!.sat)
+        
         textView.text = String(describing: school!.facSalary)
         
+        // guard that we received a valid url
         guard school?.web != nil else {
             
             return
@@ -49,10 +52,13 @@ class DetailViewController: UIViewController {
         var schoolString = school!.web
         
         // logic for testing whether website needs to have https appended
+    
         let index = schoolString.index(schoolString.startIndex, offsetBy: 4)
         
         let mySubstring = schoolString[..<index]
 
+        // creating url
+        
         if mySubstring != "http" {
             
             schoolString = "https://" + schoolString
@@ -62,15 +68,6 @@ class DetailViewController: UIViewController {
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
         
-        // create the URL
-        
-        // Load URL into Webview
-        
-        // Set school name
-        
-        // set school SAT
-        
-        // set school description
     }
 
     /*

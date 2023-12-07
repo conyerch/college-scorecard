@@ -91,25 +91,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x2I-j6-BID">
-                                <rect key="frame" x="20" y="50" width="363" height="792"/>
+                                <rect key="frame" x="10" y="50" width="373" height="792"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grI-Sc-zpM">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llH-gm-UmK">
-                                        <rect key="frame" x="0.0" y="30.333333333333329" width="363" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="30.333333333333329" width="373" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbX-MN-3wa">
-                                        <rect key="frame" x="0.0" y="60.666666666666671" width="363" height="204.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="60.666666666666686" width="373" height="524.66666666666652"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="lbX-MN-3wa" secondAttribute="height" multiplier="1280:720" id="LZ3-sP-3xa"/>
+                                            <constraint firstAttribute="width" secondItem="lbX-MN-3wa" secondAttribute="height" multiplier="1280:1800" id="LZ3-sP-3xa"/>
                                         </constraints>
                                         <wkWebViewConfiguration key="configuration">
                                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -117,7 +117,7 @@
                                         </wkWebViewConfiguration>
                                     </wkWebView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="247" verticalCompressionResistancePriority="747" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uGV-MN-1e2">
-                                        <rect key="frame" x="0.0" y="275" width="363" height="517"/>
+                                        <rect key="frame" x="0.0" y="595.33333333333337" width="373" height="196.66666666666663"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,7 +131,7 @@
                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="x2I-j6-BID" firstAttribute="top" secondItem="1rd-WX-nam" secondAttribute="top" constant="50" id="3FX-Ks-B2L"/>
-                            <constraint firstItem="x2I-j6-BID" firstAttribute="leading" secondItem="1rd-WX-nam" secondAttribute="leading" constant="20" id="YG3-9F-yDG"/>
+                            <constraint firstItem="x2I-j6-BID" firstAttribute="leading" secondItem="1rd-WX-nam" secondAttribute="leading" constant="10" id="YG3-9F-yDG"/>
                             <constraint firstItem="1rd-WX-nam" firstAttribute="bottom" secondItem="x2I-j6-BID" secondAttribute="bottom" id="ape-z7-HPj"/>
                             <constraint firstItem="x2I-j6-BID" firstAttribute="trailing" secondItem="1rd-WX-nam" secondAttribute="trailing" constant="-10" id="qTg-cD-L18"/>
                         </constraints>

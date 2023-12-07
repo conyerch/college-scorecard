@@ -10,9 +10,13 @@ import Foundation
 struct Constants {
     
     static var API_KEY = "tm10FeQPFFBltVEACrjTbNbe7NgwGOcvfbhjrfma"
-    static var FIELDS = "id,school.name,latest.student.size,school.school_url,latest.admissions.sat_scores.average.overall,school.faculty_salary,latest.cost.attendance.academic_year"
+    
+    static var FIELDS = "id,school.name,latest.student.size,school.school_url,latest.admissions.sat_scores.average.overall,school.faculty_salary,latest.cost.attendance.academic_year,latest.programs.cip_4_digit.title,latest.programs.cip_4_digit.code,latest.programs.cip_4_digit.earnings.4_yr.overall_median_earnings"
+    
     static var API_URL = "https://api.data.gov/ed/collegescorecard/v1/schools.json?school.degrees_awarded.predominant=2,3&_fields=\(Constants.FIELDS)&api_key=\(Constants.API_KEY)"
     static var CollegeCell_ID = "CollegeCell"
+    
+    static var earnings = "latest.programs.cip_4_digit.earnings.4_yr.overall_median_earnings"
     
     static var genImage = "https://images.squarespace-cdn.com/content/v1/546119bae4b085cc73a9bff6/c65a8641-e64c-4f4b-8d8e-6926f45246c3/BC+Bapst+Library.jpeg"
     
